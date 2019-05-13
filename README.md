@@ -1,4 +1,5 @@
-模組選擇 : XGboost
+模組選擇 : XGboost  
+樹的數量為1000顆，深度為8，子樹最小權重為0.4，懲罰係數為0.3，特徵採樣比例為0.8，以及為了防止訓練出來的樹與原本的太相似，所以只取80％的子樣本來訓練
 
 特徵選擇 : 
     'date_block_num', 'shop_id', 'item_id', 'item_cnt_month', 'city_code','item_category_id', 'type_code', 'subtype_code', 'item_cnt_month_lag_1','item_cnt_month_lag_2', 'item_cnt_month_lag_3', 'item_cnt_month_lag_6','item_cnt_month_lag_12', 'date_avg_item_cnt_lag_1','date_item_avg_item_cnt_lag_1', 'date_item_avg_item_cnt_lag_2','date_item_avg_item_cnt_lag_3', 'date_item_avg_item_cnt_lag_6','date_item_avg_item_cnt_lag_12', 'date_shop_avg_item_cnt_lag_1','date_shop_avg_item_cnt_lag_2', 'date_shop_avg_item_cnt_lag_3','date_shop_avg_item_cnt_lag_6', 'date_shop_avg_item_cnt_lag_12','date_cat_avg_item_cnt_lag_1', 'date_shop_cat_avg_item_cnt_lag_1','date_shop_type_avg_item_cnt_lag_1','date_shop_subtype_avg_item_cnt_lag_1', 'date_city_avg_item_cnt_lag_1','date_item_city_avg_item_cnt_lag_1', 'date_type_avg_item_cnt_lag_1', 'date_subtype_avg_item_cnt_lag_1', 'delta_price_lag','delta_revenue_lag_1', 'month', 'days', 'item_shop_last_sale', 'item_last_sale', 'item_shop_first_sale', 'item_first_sale'    
